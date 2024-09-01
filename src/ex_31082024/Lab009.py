@@ -55,3 +55,21 @@ t=True
 print(f or t)       #True
 print(f and t)      #False
 
+# "!" is used when we're using integer
+# "not" is used when we're using boolean
+x=10
+y=20
+result = (x != y)
+print(result)           #True
+
+#Ternary Operator
+my_age = int(input("Enter your age"))
+print("I will go to Goa" if my_age > 18 else "Can't go, stay home")
+
+#if else
+if my_age > 18:
+    print("I will got to Goa")
+else:
+    print("Can't go, stay home")
+
+
