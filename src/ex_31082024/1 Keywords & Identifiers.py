@@ -8,6 +8,7 @@ print(keyword.kwlist)
 # 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not',
 # 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
+# a is identifier
 a=1
 _=50
 print(_)        #50
