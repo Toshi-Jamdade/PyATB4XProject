@@ -27,3 +27,4 @@ match browser_name:
         print("Execute the safari code")
     case _:
         print("Browser not found")
+
