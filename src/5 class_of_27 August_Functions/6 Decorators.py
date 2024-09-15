@@ -2,15 +2,24 @@
 
 # They are powerful tool that allows you to wrap another function & extend its functionality, while keeping the original function's code unchanged.
 
-def my_decorator(func):
+def add_extra_security(func):
     #2 parts: wrapper & call
     def wrapper():
         print("Something is happening before a function is called.")
-        func()
+        print("Add helmet, gloves, knee guards")
+        func()      #this is calling drive_bike
         print("Something is happening after a function is called.")
+        print("Secure Driving")
     return wrapper()
 
-def drive_bike():
+@add_extra_security
+def drive_bike():       #this will go to func beacuse @add_extra_security is added before it
     print("I am driving")
 
-drive_bike()
+# Something is happening before a function is called.
+# Add helmet, gloves, knee guards
+# I am driving
+# Something is happening after a function is called.
+# Secure Driving
+
+
